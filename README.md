@@ -7,3 +7,5 @@ Run the packages. Separately run the two example packages above with the roslaun
 Sometimes you need to change joystick's mod. Change the mod of the joystick in case by running: sudo rmmod xpad, and sudo xboxdrv. If xboxdrv is not installed, install it with sudo apt-get install xboxdrv
 Note: Change the port of rr_oepnrover_basic launch file to /dev/ttyUSB0. And the warning from joystick saying something like "no force feedback" is not fatal, and could be ignored.
 Reference: https://github.umn.edu/RSN-Robots/groundRobotDrive
+
+if port permission error sudo adduser <the username you're working under> dialout
