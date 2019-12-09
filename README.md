@@ -9,3 +9,6 @@ Note: Change the port of rr_oepnrover_basic launch file to /dev/ttyUSB0. And the
 Reference: https://github.umn.edu/RSN-Robots/groundRobotDrive
 
 if port permission error sudo adduser <the username you're working under> dialout
+if example.launch cannot be found 
+source devel/setup.bash
+
