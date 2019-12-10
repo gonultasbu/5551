@@ -1,5 +1,6 @@
 # 5551
 
+<<<<<<< HEAD
 ROVER ROBOTICS
 Assembling the robot. Install the cables and the interface board following the tutorial: https://roverrobotics.com/blogs/guides/starter-kit-getting-started-guide. Plug in the battery when using the robot.
 Install the packages. Install ROS packages for controlling the robot. Here downloading and installing the source code is recommended for the convenience of revising the roslaunch file. https://github.com/RoverRobotics/rr_openrover_basic, for basic controlling nodes, and https://github.com/RoverRobotics/rr_control_input_manager for using Xbox controller nodes. Simply create a catkin workspace for the project, and git clone ... two pacakges above into the src folder, and catkin_make
@@ -12,3 +13,6 @@ if port permission error sudo adduser <the username you're working under> dialou
 if example.launch cannot be found 
 source devel/setup.bash
 
+=======
+This is a repository for the University of Minnesota, Twin Cities CSci 5551 course. Introduction to Intelligent Systems.
+>>>>>>> master
