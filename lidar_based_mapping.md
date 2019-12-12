@@ -18,7 +18,7 @@ rosrun gmapping slam_gmapping _odom_frame:=odom_encoder _temporalUpdate:=0.1
 ```
 Play the recorded rosbag in a new terminal
 ```
-rosbag play mylaserdata3.bag
+rosbag play --clock mylaserdata3.bag
 ```
 Visualize using rviz in a new terminal
 ```
