@@ -1,3 +1,6 @@
+```
+roscore
+```
 After running roscore run this in another terminal to run using bags
 ```
 rosparam set use_sim_time true
