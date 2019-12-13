@@ -7,8 +7,8 @@ rosparam set use_sim_time true
 ```
 Publish fixed frames for velodyne(lidar)->base_link and base_link->/odom_encoder for laserscan conversion, run in seperate terminals
 ```
-rosrun tf static_transform_publisher 0 0 0 0 0 0 base_link velodyne 50
-rosrun tf static_transform_publisher 0 0 0 0 0 0 /odom_encoder base_link 50
+rosrun tf static_transform_publisher 0 0 0 0 0 0 base_link velodyne 1000
+rosrun tf static_transform_publisher 0 0 0 0 0 0 /odom_encoder base_link 1000
 
 ```
 Convert PointCloud to LaserScan in a new terinal
