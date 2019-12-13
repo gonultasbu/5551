@@ -17,7 +17,7 @@ rosrun pointcloud_to_laserscan pointcloud_to_laserscan_node cloud_in:=/velodyne_
 ```
 Start gmapping with temporal updates in a new terminal
 ```
-rosrun gmapping slam_gmapping _odom_frame:=odom_encoder _temporalUpdate:=0.1
+rosrun gmapping slam_gmapping _odom_frame:=odom_encoder _temporalUpdate:=0.01 _map_update_interval:=1.0 _transform_publish_period:=0.0001
 ```
 Play the recorded rosbag in a new terminal
 ```
