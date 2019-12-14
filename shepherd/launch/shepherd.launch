@@ -1,0 +1,13 @@
+<launch>
+
+ <node pkg="pointcloud_to_laserscan" type="sensor_msgs/Laserscan" name="pointcloud_to_laserscan_node" output="screen">
+    <param name="cloud_in" value="/velodyne_points" />
+ </node>
+ 
+ <node pkg="rr_openrover_basic" type="nav_msgs/odometry" name="rr_openrover_basic" output="screen">
+ </node>
+
+ <node pkg="tf" type="tf2_msgs/TFMessage" name="static_transform_publisher" args="0 0 0 0 0 0 base_link velodyne 50" />
+ <node pkg="tf" type="tf2_msgs/TFMessage" name="static_transform_publisher" args="0 0 0 0 0 0 odom_encoder base_link 50" />
+
+</launch> 
