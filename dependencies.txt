@@ -1,0 +1,8 @@
+ros-kinetic-gmapping
+ros-kinetic-navigation
+ros-kinetic-rr-control-input-manager
+ros-kinetic-rr-openrover-basic
+ros-kinetic-pointcloud-to-laserscan
+ros-kinetic-velodyne
+python
+twist_stamped.py
