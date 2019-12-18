@@ -1,5 +1,10 @@
 Using Ubuntu 16.04 and ros-kinetic.  
 
+HARDWARE INSTRUCTIONS
+=========================
+
+The Velodyne LiDAR must be connected to the Laptop running ROS according to its instructions provided. To achieve mobility, a 9V mobile battery has been used. During the development phase, it has been discovered that the placement of the LiDAR is very important. Being a very precise sensor, even slight misalignment of the LiDAR can lead to erroneous calculations. LiDAR should be placed at a higher altitude than the laptop, so that the Lidar rays are not blocked by any part of the robot. Also, the LiDAR should be rigidly attached to the robot base, so that it does not change position or orientation as a result of robot motion, sudden jerks, turns, stops etc. Else, these will cause the LiDAR data to be in a frame which is different from the frame expected by the SLAM algorithm. The generated map will be erroneous and the resulting navigation commands are going to be wrong because the robot orientation is different from what the navigation stack was expecting.
+
 Install the packages. Install ROS packages for controlling the robot. Here downloading and installing the source code is recommended for the convenience of revising the roslaunch file. https://github.com/RoverRobotics/rr_openrover_basic, for basic controlling nodes, and https://github.com/RoverRobotics/rr_control_input_manager for using Xbox controller nodes. Simply create a catkin workspace for the project,  
 ```
 cd catkin_ws/src/
