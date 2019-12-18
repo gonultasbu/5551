@@ -124,8 +124,5 @@ If you did not previously, run the python file in folder shepherd/scrips/twisted
 
 Control the robot going forth and back with the xbox controller, so that gmapping could generate a dynamic map to use.  
 
-If everything is correct, for example, you can see the global_costmap and local_costmap, manually set a target position from rostopic: rostopic pub /move_base_simple/goal geometry_msgs/PoseStamped "header ..." and set your frame_id and target position. Note: you can give a quite small number, eg. 0.001 for orientation of z, in case there are warning messages on quaternions from navigation stacks.  
-
-
-
+If everything is correct, for example, you can see the global_costmap and local_costmap, manually set a target position from rostopic: rostopic pub /move_base_simple/goal geometry_msgs/PoseStamped "header ..." and set your frame_id and target position. Note: you can give a quite small number, eg. 0.001 for orientation of z, in case there are warning messages on quaternions from navigation stacks. The robot should be ready to navigate autonomously after reading a goal pose.
 
