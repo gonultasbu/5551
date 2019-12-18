@@ -104,13 +104,17 @@ rosrun rviz rviz -f velodyne
 ```
 Select the according topics&visualize, you should be able to see the laserscan on rviz after selecting its topic.  
 
-For actuation:  
+FOR ACTUATION
+========================
 
 twist_stamped.py is a publisher subscriber translator node that is ran with python on a new terminal. The base python environment should be capable of running it. It converts the Twist type messages to TwistStamped type. On a new terminal:
 ```
 python twist_stamped.py
 ```
 Keep it running for actuating the robot.
+
+FOR NAVIGATION
+========================
 
 Launch the navigation stack from launch file:  
 ```
