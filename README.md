@@ -104,13 +104,17 @@ rosrun rviz rviz -f velodyne
 ```
 Select the according topics&visualize, you should be able to see the laserscan on rviz after selecting its topic.  
 
-For actuation:  
+FOR ACTUATION
+========================
 
 twist_stamped.py is a publisher subscriber translator node that is ran with python on a new terminal. The base python environment should be capable of running it. It converts the Twist type messages to TwistStamped type. On a new terminal:
 ```
 python twist_stamped.py
 ```
 Keep it running for actuating the robot.
+
+FOR NAVIGATION
+========================
 
 Launch the navigation stack from launch file:  
 ```
@@ -120,8 +124,5 @@ If you did not previously, run the python file in folder shepherd/scrips/twisted
 
 Control the robot going forth and back with the xbox controller, so that gmapping could generate a dynamic map to use.  
 
-If everything is correct, for example, you can see the global_costmap and local_costmap, manually set a target position from rostopic: rostopic pub /move_base_simple/goal geometry_msgs/PoseStamped "header ..." and set your frame_id and target position. Note: you can give a quite small number, eg. 0.001 for orientation of z, in case there are warning messages on quaternions from navigation stacks.  
-
-
-
+If everything is correct, for example, you can see the global_costmap and local_costmap, manually set a target position from rostopic: rostopic pub /move_base_simple/goal geometry_msgs/PoseStamped "header ..." and set your frame_id and target position. Note: you can give a quite small number, eg. 0.001 for orientation of z, in case there are warning messages on quaternions from navigation stacks. The robot should be ready to navigate autonomously after reading a goal pose.
 
