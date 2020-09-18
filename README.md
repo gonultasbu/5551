@@ -72,7 +72,7 @@ rosrun rviz rviz -f velodyne
 OR
 http://wiki.ros.org/velodyne/Tutorials/Getting%20Started%20with%20the%20Velodyne%20VLP16
 ```
-sudo apt-get install ros-kinetic-velodyne
+sudo apt-get install ros-melodic-velodyne
 ```
 
 After setting up LIDAR, we need to have SLAM. Follow these steps.
