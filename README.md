@@ -38,9 +38,10 @@ and
 ```
 sudo xboxdrv
 ```
-If xboxdrv is not installed, install it with 
+If xboxdrv and joy are not installed, install it with 
 ```
 sudo apt-get install xboxdrv
+sudo apt-get install ros-kinetic-joy
 ```
 Note: Change the port of rr_openrover_basic launch file to /dev/ttyUSB0 if it's something else. 
 The error from joystick saying something like "no force feedback" is not fatal, and may be safely ignored.
